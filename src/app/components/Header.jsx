@@ -16,7 +16,7 @@ const Header = () => {
             <Image className='w-[500px]' src={Map}/>
             </div>
         </div>
-        <h1 className='text-[200px] text-center font-extrabold text-blue-950 shadow-lg'>LOCATION!</h1>
+        <h1 className='text-[200px] text-center font-extrabold text-blue-950'>LOCATION!</h1>
     </div>
   )
 }
