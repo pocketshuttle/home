@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="navbar  py-4">
+    <nav className="navbar bg-sky-300 py-4">
       <div className="logo">
         <Link href={'/'} className="links w-[50px]">
           <Image className='w-[140px]' src={PSLOGO} alt="" />

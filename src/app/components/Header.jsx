@@ -5,7 +5,7 @@ import Map from '../../../public/map.png';
 
 const Header = () => {
   return (
-    <div className='pt-28 header_bg'>
+    <div className='pt-28 header_b bg-sky-300'>
         <div className='flex justify-center gap-20 items-center'>
             <div className='col_1'>
                 <h1 className='text-dark text-5xl font-bold text-blue-950'>LOCATION YOU <br/> CAN TRUST</h1>

@@ -12,8 +12,8 @@
   font-family: 'Poppins';
   /* background: #0f1b2a; */
   /* background: #87ceeb; */
-  background: rgb(15,27,42);
-  background: linear-gradient(81deg, rgba(15,27,42,1) 0%, rgba(135,206,235,1) 0%, rgba(59,132,162,1) 70%);
+  /* background: rgb(15,27,42);
+  background: linear-gradient(81deg, rgba(15,27,42,1) 0%, rgba(135,206,235,1) 0%, rgba(59,132,162,1) 70%); */
 
   z-index: 1;
 }
