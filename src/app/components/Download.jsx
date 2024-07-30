@@ -8,8 +8,10 @@ import Webapp from '../../../public/web.png'
 
 const Download = () => {
   return (
-    <div className='bg-sky-300 m-20 rounded-3xl'>
-        <div className='flex container mx-auto download_b h-[600px] justify-around items-center'>
+    <>
+    <div className='bg-blue-950 pt-48'>
+    <div className='bg-sky-300 mx-20 shadow-xl rounded-3xl'>
+        <div className='flex container  mx-auto download_b h-[600px] justify-around items-center'>
                 <div>
                     <h1 className='text-blue-950 text-3xl'>Explainer texts in higher size</h1>
                     <p className='text-blue-950'>The small section</p>
@@ -25,6 +27,8 @@ const Download = () => {
                 </div>
         </div>
     </div>
+    </div>
+    </>
   )
 }
 

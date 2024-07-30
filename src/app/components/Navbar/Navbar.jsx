@@ -5,7 +5,7 @@ import { IoHome } from "react-icons/io5";
 import { BsRocketTakeoff } from "react-icons/bs";
 import { GrDomain } from "react-icons/gr";
 import { FaPeopleGroup } from "react-icons/fa6";
-import PSLOGO from '../../../../public/pslogo-2.png';
+import PSLOGO from '../../../../public/pslogo.png';
 import { IoCloseSharp } from "react-icons/io5";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="navbar bg-sky-300 py-4">
+    <nav className="navbar bg-sk-300 py-4">
       <div className="logo">
         <Link href={'/'} className="links w-[50px]">
           <Image className='w-[140px]' src={PSLOGO} alt="" />
@@ -74,7 +74,12 @@ const Navbar = () => {
           </li>
           <li>
             <Link href={'/'} className={`links ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-              Incorporate
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link href={'/'} className={`links p-2 bg-pink-600 rounded ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+              Sign Up
             </Link>
           </li>
           <li>

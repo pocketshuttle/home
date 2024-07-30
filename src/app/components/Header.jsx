@@ -1,23 +1,54 @@
-import React from 'react';
+'use client'
+import React, {useEffect} from 'react';
 import Image from 'next/image';
-import Map from '../../../public/map.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+// import Map from '../../../public/map.png';
+import GeofenceImg from '../../../public/geofencings.gif';
+import Playstore from '../../../public/playstore.png'
+import Appstore from '../../../public/applestore.png'
+import Webapp from '../../../public/web.png'
+import Try from '../../../public/try.png';
+import Point from '../../../public/point2.png';
 
 
 const Header = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+}, [])
   return (
-    <div className='pt-28 header_b bg-sky-300'>
-        <div className='flex justify-center gap-20 items-center'>
-            <div className='col_1'>
-                <h1 className='text-dark text-5xl font-bold text-blue-950'>LOCATION YOU <br/> CAN TRUST</h1>
-                <p className=' text-blue-950'>The small texts that will be on the home page.</p>
-                <button className='border border-blue-950 w-[150px] h-[50px] mt-10 text-2xl  text-blue-950'>ENROL</button>
-            </div>
-            <div className='col_2'>
-            <Image className='w-[500px]' src={Map}/>
+    <>
+    <div className='pt-40 header_bg h-[820px] '>
+        <div className='text-center'>
+            <div data-aos="zoom in" className=''>
+                <div className='text-dark text-6xl font-bold text-white'>
+                 <div className='flex tracking-in-expand leading-normal justify-center items-center'>
+                  <div>L</div>
+                  <div><Image className='w-[50px]' src={GeofenceImg}/></div>
+                  <div>cation Manager <span className='text-teal-400'>you</span> </div>
+                  </div>  
+                  <span className='text-teal-400 tracking-in-expand'>can always </span> Trust</div>
+                <p className=' text-white mt-5'>The small texts that will be on the home page.</p>
+                <div className='flex justify-center items-center'>
+                    <Image className='w-[140px] h-[50px]' src={Playstore}/>
+                    <Image className='w-[140px] h-[82px]' src={Appstore}/>
+                    <Image className='w-[140px] h-[50px]' src={Webapp}/>
+                    </div>
             </div>
         </div>
-        <h1 className='text-[200px] text-center font-extrabold text-blue-950'>LOCATION!</h1>
+        <div className='mx-20 mt-48 overlap'>
+              <div className='feature_bg py-20 rounded-3xl flex justify-center items-center gap-10'>
+              <div className='text-slate-50'>
+               
+              </div>
+              <div className='text-slate-50'>
+                
+              </div>
+          </div>
+        </div>
     </div>
+   
+    </>
   )
 }
 

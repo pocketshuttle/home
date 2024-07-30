@@ -10,7 +10,7 @@
   padding: 0.5rem;
   color: #d8d2d2;
   font-family: 'Poppins';
-  /* background: #0f1b2a; */
+  background: #201678;
   /* background: #87ceeb; */
   /* background: rgb(15,27,42);
   background: linear-gradient(81deg, rgba(15,27,42,1) 0%, rgba(135,206,235,1) 0%, rgba(59,132,162,1) 70%); */
@@ -30,7 +30,8 @@
 
 .links {
     text-decoration: none;
-  color: #0f1b2a;
+    color: #ffff;
+  /* color: #0f1b2a; */
   font-size: 14px;
 }
 
@@ -58,7 +59,8 @@
 .line {
   height: 3px;
   width: 30px;
-  background-color: #0f1b2a;
+  /* background-color: #D74390; */
+  background-color: #ffff;
   font-weight: 600;
   margin: 5px 0;
   transition: 0.4s;
