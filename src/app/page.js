@@ -2,7 +2,7 @@ import Image from "next/image";
 import Header from "./components/Header";
 import Features from "./components/Features";
 import School from "./components/School";
-import Download from "./components/Download";
+import Subscribe from "./components/Subscribe";
 
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <Header/>
       <Features/>
       <School/>
-      <Download/>
+      <Subscribe/>
     </main>
   );
 }

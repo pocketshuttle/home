@@ -5,7 +5,7 @@ import Logo from '../../../public/pslogo.png'
 const Footer = () => {
   return (
     <>
-    <div className='bg-blue-950'>
+    <div className='footer_bg mt-40'>
     <div className='container mx-auto'>
         <div className='flex justify-around h-[400px] items-center'>
             <div>

@@ -10,15 +10,15 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+
 .header_bg {
   background: url('../../public/world.png') no-repeat bottom;
   position: relative;
   overflow: hidden;
   background-size: 40%;
   background-color: #201678;
-
-  /* background: #87ceeb; */
 }
+
 
 .overlap {
 z-index: 2;
@@ -49,18 +49,26 @@ z-index: 2;
 }
 
 .school_bg {
+  background-color: #201678;
+}
+
+.inner_download {
   background-color: #180D63;
+}
+
+.footer_bg {
+  background-color: #201678;
+
 }
 
 .pupil_bg {
   background: rgb(15,27,42);
   background: linear-gradient(81deg, rgba(15,27,42,1) 0%, rgba(135,206,235,1) 0%, rgba(59,132,162,1) 70%);
 }
-
+/* 
 .download_bg {
-  background: rgb(15,27,42);
-  background: linear-gradient(81deg, rgba(15,27,42,1) 0%, rgba(135,206,235,1) 0%, rgba(59,132,162,1) 70%);
-}
+  background-color: #2DD4BE;
+} */
 
 
 .text-pop-up-top {
