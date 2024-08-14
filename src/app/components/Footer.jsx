@@ -18,9 +18,9 @@ const Footer = () => {
     <div className='container mx-auto'>
         <div className='flex justify-between pt-16 items-center'>
             <div>
-            <Image className='w-[200px]' src={Logo} />
+            <Image className='md:w-[200px] w-[150px] ml-4' src={Logo} />
             </div>
-            <div className='col_1 flex justify-center items-center gap-3 text-slate-400 text-[20px]'>
+            <div className='col_1 flex justify-center items-center mr-4 gap-3 text-slate-400 text-[20px]'>
            <p className='border border-sky-300 text-sky-300 p-2 rounded-full'><FaFacebookF/></p> 
            <p className='border border-sky-300 text-sky-300 p-2 rounded-full'> <FaLinkedinIn /></p>
            <p className='border border-sky-300 text-sky-300 p-2 rounded-full'> <FaXTwitter /></p>
@@ -28,16 +28,16 @@ const Footer = () => {
             </div>
         </div>
         <p className='border-b border-slate-400 pb-10 pt-3'></p>
-        <div className='pt-4 pb-8 flex justify-between items-center'>
-            <div className='flex justify-start text-[12px] items-center gap-5 text-slate-400'>
+        <div className='pt-4 pb-8 flex justify-between items-center flex-wrap'>
+            <div className='flex justify-start text-[12px] items-end md:items-center gap-5 text-slate-400 flex-wrap md:ml-0 ml-4'>
                 <p>Term of Service</p>
                 <p>Cookies and Policy</p>
                 <p>Faq</p>
                 <p>Support</p>
                 <p>Careers</p>
             </div>
-            <div className='text-slate-400 text-[12px]'>
-                <p>Copyright © {year} PocketShuttle. All rights reserved.</p>
+            <div className='text-slate-400 ml-4 mt-4 md:mt-0 text-center text-[12px]'>
+                <p className='text-center'>Copyright © {year} PocketShuttle. All rights reserved.</p>
             </div>
         </div>
     </div>

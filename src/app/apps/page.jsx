@@ -28,6 +28,7 @@ const page = () => {
         <p className='w-[640px] text-slate-500 text-[20px] font-medium'>Did you come here because you were hungry or simply curious? It&apos;s perfectly fine if you came for both. Whether it&apos;s for your tastebuds or for curiosity&apos;s sake, download the app, for satisfaction guaranteed.</p>
         </div>
         </div>
+        <p className='text-teal-300 text-center text-sm underline'>Coming Soon</p>
         <div className='flex py-10 hover:shadow justify-center'>
        <Image src={'/phone.png'} width={250} height={250} alt="phone"/>
        </div>

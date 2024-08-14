@@ -17,6 +17,8 @@
   overflow: hidden;
   background-size: 40%;
   background-color: #201678;
+  box-shadow: inset 0 0 0 2000px rgba(32, 22, 120, 0.6);
+
 }
 
 .app_page {
@@ -57,6 +59,7 @@ z-index: 2;
 
 .inner_download {
   background-color: #180D63;
+  height: auto;
 }
 
 .footer_bg {
@@ -155,4 +158,19 @@ z-index: 2;
   100% {
     opacity: 1;
   }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .header_bg {
+    background: url('../../public/world.png') no-repeat center;
+    position: relative;
+    overflow: hidden;
+    background-size: 100%;
+    background-color: #201678;
+    box-shadow: inset 0 0 0 2000px rgba(32, 22, 120, 0.6);
+  
+  }
+  
 }

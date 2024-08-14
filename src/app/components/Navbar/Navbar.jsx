@@ -23,13 +23,13 @@ const Navbar = () => {
     setActiveItem(path);
   };
   const [isMobile, setIsMobile] = useState(
-    typeof window !== 'undefined' ? window.innerWidth < 2000 : false
+    typeof window !== 'undefined' ? window.innerWidth < 764 : false
   );
   const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(typeof window !== 'undefined' ? window.innerWidth < 2000 : false);
+      setIsMobile(typeof window !== 'undefined' ? window.innerWidth < 764 : false);
       setShowMenu(false); // Close the menu on resize
     };
 
@@ -78,11 +78,11 @@ const Navbar = () => {
             </Link>
 
           </li>
-          <li>
+          {/* <li>
             <Link href={'/'} className={`links ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
               Login
             </Link>
-          </li>
+          </li> */}
          
           <li>
           </li>
