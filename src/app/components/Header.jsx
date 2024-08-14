@@ -23,11 +23,11 @@ const Header = () => {
             <div data-aos="zoom in" className=''>
                 <div className='text-dark text-6xl font-bold text-white'>
                  <div className='flex tracking-in-expand leading-normal justify-center items-center'>
-                  <div>L</div>
+                  <div>M</div>
                   <div><Image className='w-[50px]' src={GeofenceImg}/></div>
-                  <div>cation Manager <span className='text-teal-400'>you</span> </div>
+                  <div>bile School Run <span className='text-sky-400'>you</span> </div>
                   </div>  
-                  <span className='text-teal-400 tracking-in-expand'>can always </span> Trust</div>
+                  <span className='text-sky-400 tracking-in-expand'>can always </span> Trust</div>
                 <p className=' text-white mt-5'>The small texts that will be on the home page.</p>
                 <div className='flex justify-center items-center'>
                     <Image className='w-[140px] h-[50px]' src={Playstore}/>
@@ -39,10 +39,10 @@ const Header = () => {
         <div className='mx-20 mt-48 overlap'>
               <div className='feature_bg py-20 rounded-3xl flex justify-center items-center gap-10'>
               <div className='text-slate-50'>
-               
+              <p className='text-slate-300 text-2xl'>Over 20 Schools on our Waitlist</p> 
               </div>
               <div className='text-slate-50'>
-                
+              <button className='bg-sky-400 text-black rounded-md  w-[200px] px-3 text-lg text-bold font-normal py-3'>Join Now </button>
               </div>
           </div>
         </div>

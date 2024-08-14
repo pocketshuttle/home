@@ -11,15 +11,15 @@ import Brand from '../../../public/brand.gif';
 const Features = () => {
   return (
    <>
-    <div className='bg-slate-50 pb-20 features'>
-         {/* <h1 className='text-4xl font-bold py-10 feature_bg text-center text-teal-400'>Know Better, Track better. Stay Safe!</h1> */}
+    <div className='bg-slate-50 pb-20  features'>
         <div className='flex justify-around items-center gap-10 pt-10'>
            {/* <div className=''>
             <Image className='w-[300px]' src={DummyImg}/>
            </div> */}
            <div className=''>
+            <h2 className='text-4xl text-center font-bold ml-5 my-6 mb-10'>The PocketShuttle App makes sure that you<br/> can do everything on one platform.</h2>
             <div className='flex text-center justify-around gap-5 m-5'>
-            <div className='w-[300px] p-4 bg-inherit border border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
+            <div className='w-[300px] p-4 bg-inherit border hover:shadow-xl transition-all border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Clock In</p>
                    <p className='text-left text-sm w-[200px] mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <div className='flex justify-between mt-10 items-center'>
@@ -27,7 +27,7 @@ const Features = () => {
                      <div className='text-sm'>EXPLORE MORE</div>
                    </div>
                 </div>
-                <div className='w-[300px] p-4 bg-inherit border border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
+                <div className='w-[300px] p-4 bg-inherit border hover:shadow-xl border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Geofencing</p>
                    <p className='text-left text-sm w-[200px] mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <div className='flex justify-between mt-10 items-center'>
@@ -35,7 +35,7 @@ const Features = () => {
                      <div className='text-sm'>EXPLORE MORE</div>
                    </div>
                 </div>
-                <div className='w-[300px] p-4 bg-inherit border border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
+                <div className='w-[300px] p-4 bg-inherit border hover:shadow-xl border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Alert</p>
                    <p className='text-left text-sm w-[200px] mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <div className='flex justify-between mt-10 items-center'>
@@ -45,7 +45,7 @@ const Features = () => {
                 </div>
             </div>
             <div className='flex text-center justify-around gap-5 m-5'>
-            <div className='w-[300px] p-4 bg-inherit border border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
+            <div className='w-[300px] p-4 bg-inherit border hover:shadow-xl border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Predictive Analytic</p>
                    <p className='text-left text-sm w-[200px] mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <div className='flex justify-between mt-10 items-center'>
@@ -53,7 +53,7 @@ const Features = () => {
                      <div className='text-sm'>EXPLORE MORE</div>
                    </div>
                 </div>
-                <div className='w-[300px] p-4 bg-inherit border border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
+                <div className='w-[300px] p-4 bg-inherit border hover:shadow-xl border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Brand</p>
                    <p className='text-left text-sm w-[200px] mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <div className='flex justify-between mt-10 items-center'>
@@ -61,7 +61,7 @@ const Features = () => {
                      <div className='text-sm'>EXPLORE MORE</div>
                    </div>
                 </div>
-                <div className='w-[300px] p-4 bg-inherit border border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
+                <div className='w-[300px] p-4 bg-inherit border hover:shadow-xl border-slate-300 h-[250px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Biometric</p>
                    <p className='text-left text-sm w-[200px] mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <div className='flex justify-between mt-10 items-center'>

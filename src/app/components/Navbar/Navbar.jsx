@@ -5,7 +5,7 @@ import { IoHome } from "react-icons/io5";
 import { BsRocketTakeoff } from "react-icons/bs";
 import { GrDomain } from "react-icons/gr";
 import { FaPeopleGroup } from "react-icons/fa6";
-import PSLOGO from '../../../../public/pslogo.png';
+import PSLOGO from '../../../../public/ps.png';
 import { IoCloseSharp } from "react-icons/io5";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -73,19 +73,26 @@ const Navbar = () => {
 
           </li>
           <li>
+          <Link href={'/'} className={`links ${activeItem === 'features' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+              Apps
+            </Link>
+
+          </li>
+          <li>
             <Link href={'/'} className={`links ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
               Login
             </Link>
           </li>
-          <li>
-            <Link href={'/'} className={`links p-2 bg-pink-600 rounded ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-              Sign Up
-            </Link>
-          </li>
+         
           <li>
           </li>
+          
         </ul>
+            {/* <Link href={'/'} className={`links p-2 mr-5 w-[100px] text-center bg-pink-600 rounded ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+              Sign Up
+            </Link> */}
         {/*New fix up */}
+        
       {isMobile ? (
         <div className="hamburger" onClick={handleMenuClick}>
           <div className={`line  ${showMenu ? 'open' : ''}`} />

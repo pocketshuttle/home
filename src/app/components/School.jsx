@@ -24,9 +24,9 @@ const School = () => {
               <h1 className='text-3xl font-bold text-white'>Smartest Bus</h1>
               <p className='text-slate-500 w-[300px]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, accusantium.</p>
               <ul className='mt-5'>
-                <li className='flex text-white justify-start items-center gap-2'><IoIosCheckmarkCircle className='text-teal-400 text-2xl' /> Schools</li>
-                <li className='flex text-white justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-teal-400 text-2xl' />Parents</li>
-                <li className='flex text-white justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-teal-400 text-2xl' />Pupils</li>
+                <li className='flex text-white justify-start items-center gap-2'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> Schools</li>
+                <li className='flex text-white justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' />Parents</li>
+                <li className='flex text-white justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' />Pupils</li>
               </ul>
             </div>
         </div>
