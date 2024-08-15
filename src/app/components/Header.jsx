@@ -36,7 +36,7 @@ const Header = () => {
                     </div>
             </div>
         </div>
-        <div className=' mx-5 md:mx-20 mt-48 overlap'>
+        <div className='mx-5 md:mx-20 mt-48 overlap'>
               <div className='feature_bg py-10 rounded-3xl flex justify-center items-center flex-wrap gap-10'>
               <div className='text-slate-50'>
               <p className='text-slate-300 text-xl md:text-2xl'>Over 20 Schools on our Waitlist</p> 
