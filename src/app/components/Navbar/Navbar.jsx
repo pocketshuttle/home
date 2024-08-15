@@ -60,7 +60,7 @@ const Navbar = () => {
         </Link>
       </div>
         {/* New fix */}
-      <ul className="nav-links text-md container flex items-center gap-1 justify-center text-center">
+      {/* <ul className="nav-links text-md container flex items-center gap-1 justify-center text-center">
           <li>
           <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
               Home
@@ -78,17 +78,17 @@ const Navbar = () => {
             </Link>
 
           </li>
-          {/* <li>
+          <li>
             <Link href={'/'} className={`links ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
               Login
             </Link>
-          </li> */}
+          </li> 
          
           <li>
           </li>
           
         </ul>
-            {/* <Link href={'/'} className={`links p-2 mr-5 w-[100px] text-center bg-pink-600 rounded ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+            <Link href={'/'} className={`links p-2 mr-5 w-[100px] text-center bg-pink-600 rounded ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
               Sign Up
             </Link> */}
         {/*New fix up */}
@@ -100,48 +100,51 @@ const Navbar = () => {
           <div className={`line ${showMenu ? 'open' : ''}`} />
         </div>
       ) : (
-        <p></p>
-        // <ul className="nav-links text-md container flex items-center gap-1 justify-center text-center">
-        //   <li>
-        //   <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-        //       Home
-        //     </Link>
-        //   </li>
-        //   <li>
-        //   <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-        //       Features
-        //     </Link>
+        // <p></p>
+       
+        <ul className="nav-links text-md container flex items-center gap-1 justify-center text-center">
+          <li>
+          <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+              Home
+            </Link>
+          </li>
+          <li>
+          <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+              Features
+            </Link>
 
-        //   </li>
-        //   <li>
-        //     <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-        //       Incorporate
-        //     </Link>
-        //   </li>
-        //   <li>
-        //   </li>
-        // </ul>
+          </li>
+          <li>
+            <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+              Apps
+            </Link>
+          </li>
+        </ul>
+      
       )}
 
       {isMobile && (
         <div className={`mobile-menu ${showMenu ? 'show' : ''}`}>
           <button className="close-button" onClick={closeMobileMenu}>
-          <IoCloseSharp />
+          <IoCloseSharp className='text-white' />
           </button>
           <ul>
             <li>
-              <Link href={'/'} className="links flex justify-start gap-3 items-center font-normal text-2xl" onClick={handleMenuClick}>
+              <Link href={'/'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <IoHome /> 
+              Home
               </Link>
             </li>
             <li>
-              <Link href={'/feature'} className="links flex justify-start gap-3 items-center font-normal text-2xl" onClick={handleMenuClick}>
-              <BsRocketTakeoff />
+              <Link href={'/feature'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <BsRocketTakeoff /> 
+              Feature
               </Link>
             </li>
             <li>
-              <Link href={'/incorporate'} className="links flex justify-start gap-3 items-center font-normal text-2xl" onClick={handleMenuClick}>
-              <GrDomain />  
+              <Link href={'/incorporate'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <GrDomain /> 
+               Apps
               </Link>
             </li>
           </ul>

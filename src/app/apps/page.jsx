@@ -5,7 +5,7 @@ import './apps.css';
 const page = () => {
   return (
     <div className='app_page'>
-       <div className='pt-20 app_head_img text-center'>
+       <div className='pt-28 app_head_img text-center'>
         <h2 className='text-[50px] text-white font-bold'>Hey you!</h2>
         <div className='flex justify-center my-4'>
         <p className='w-[640px] text-slate-100 text-[20px] font-medium'>Did you come here because you were hungry or simply curious? It&apos;s perfectly fine if you came for both. Whether it&apos;s for your tastebuds or for curiosity&apos;s sake, download the app, for satisfaction guaranteed.</p>

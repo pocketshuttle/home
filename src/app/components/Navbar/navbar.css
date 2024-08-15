@@ -58,11 +58,11 @@
 
 .line {
   height: 3px;
-  width: 30px;
+  width: 28px;
   /* background-color: #D74390; */
-  background-color: #ffff;
-  font-weight: 600;
-  margin: 5px 0;
+  background-color: #fdfafa;
+  font-weight: 400;
+  margin: 3px 0;
   transition: 0.4s;
 }
 
@@ -142,8 +142,8 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 10%; /* Adjust this value based on your design */
-    background-color: rgb(255, 255, 255); /* Set the background color */
+    width: 50%; /* Adjust this value based on your design */
+    background-color: #201678; /* Set the background color */
     transition: transform 0.3s ease-in-out; /* Add a transition effect */
     transform: translateX(100%);
   }
