@@ -35,7 +35,7 @@ const Subscribe = () => {
                 <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' />Unlimited Parents</li>
                 <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> Attendance Reports</li>
                 <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> Historical Data</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> In-app Chat</li>
+                {/* <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> In-app Chat</li> */}
                 <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> Priority Customer Service</li>
                
               </ul>

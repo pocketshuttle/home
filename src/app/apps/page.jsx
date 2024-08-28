@@ -6,9 +6,9 @@ const page = () => {
   return (
     <div className='app_page'>
        <div className='pt-28 app_head_img text-center'>
-        <h2 className='text-[50px] text-white font-bold'>Hey you!</h2>
+        <h2 className='text-[50px] text-white font-bold'>Hello!</h2>
         <div className='flex justify-center my-4'>
-        <p className='w-[640px] text-slate-100 text-[20px] font-medium'>Did you come here because you were hungry or simply curious? It&apos;s perfectly fine if you came for both. Whether it&apos;s for your tastebuds or for curiosity&apos;s sake, download the app, for satisfaction guaranteed.</p>
+        <p className='w-[640px] text-slate-100 text-[20px] font-medium'>We know you like to know about the safety of your pupils and update the parents as well. PocketShuttle is designed for schools and parents.</p>
         </div>
         <div>
             <p></p>
@@ -18,20 +18,20 @@ const page = () => {
        <div className='flex justify-center items-center'>
         <p className='h-[150px] mt-10 border border-sky-300'></p>
        </div>
-       <h2 className='text-[50px] text-center my-10 text-white font-bold'> This is how you do it</h2>
+       <h2 className='text-[50px] text-center my-10 text-white font-bold'> One App</h2>
        <div className='flex justify-center items-center'>
         <p className='h-[150px] mt-10 border border-sky-300'></p>
        </div>
        <div className='pt-20 text-center'>
-       <h2 className='text-[50px] text-white font-bold'>Hey you!</h2>
+       <h2 className='text-[50px] text-white font-bold'>On Web and Mobile</h2>
         <div className='flex justify-center my-4'>
-        <p className='w-[640px] text-slate-500 text-[20px] font-medium'>Did you come here because you were hungry or simply curious? It&apos;s perfectly fine if you came for both. Whether it&apos;s for your tastebuds or for curiosity&apos;s sake, download the app, for satisfaction guaranteed.</p>
+        <p className='w-[640px] text-slate-300 text-[20px] font-medium'>Currently available on Web.</p>
         </div>
         </div>
-        <p className='text-teal-300 text-center text-sm underline'>Coming Soon</p>
         <div className='flex py-10 hover:shadow justify-center'>
        <Image src={'/phone.png'} width={250} height={250} alt="phone"/>
        </div>
+       <p className='text-teal-300 text-center pb-4 text-sm underline'>Coming Soon</p>
     </div>
   )
 }

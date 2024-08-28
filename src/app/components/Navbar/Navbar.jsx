@@ -60,37 +60,6 @@ const Navbar = () => {
         </Link>
       </div>
         {/* New fix */}
-      {/* <ul className="nav-links text-md container flex items-center gap-1 justify-center text-center">
-          <li>
-          <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-              Home
-            </Link>
-          </li>
-          <li>
-          <Link href={'/'} className={`links ${activeItem === 'features' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-              Features
-            </Link>
-
-          </li>
-          <li>
-          <Link href={'/'} className={`links ${activeItem === 'features' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-              Apps
-            </Link>
-
-          </li>
-          <li>
-            <Link href={'/'} className={`links ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-              Login
-            </Link>
-          </li> 
-         
-          <li>
-          </li>
-          
-        </ul>
-            <Link href={'/'} className={`links p-2 mr-5 w-[100px] text-center bg-pink-600 rounded ${activeItem === 'incorporate' ? 'border-b-2 border-blue-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
-              Sign Up
-            </Link> */}
         {/*New fix up */}
         
       {isMobile ? (
@@ -104,18 +73,18 @@ const Navbar = () => {
        
         <ul className="nav-links text-md container flex items-center gap-1 justify-center text-center">
           <li>
-          <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+          <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('/')}>
               Home
             </Link>
           </li>
           <li>
-          <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+          <Link href={'/'} className={`links ${activeItem === '' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('')}>
               Features
             </Link>
 
           </li>
           <li>
-            <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-4 border-red-900 pb-1' : ''}`} onClick={() => handleItemClick('/')}>
+            <Link href={'/apps'} className={`links ${activeItem === '/apps' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('/apps')}>
               Apps
             </Link>
           </li>
@@ -136,13 +105,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href={'/feature'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <Link href={'/'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <BsRocketTakeoff /> 
               Feature
               </Link>
             </li>
             <li>
-              <Link href={'/incorporate'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <Link href={'/apps'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <GrDomain /> 
                Apps
               </Link>
