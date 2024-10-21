@@ -19,7 +19,7 @@ const Header = () => {
 }, [])
   return (
     <>
-    <div className='pt-40 header_bg h-[820px] '>
+    <div className='pt-40 header_bg h-[720px] md:h-[820px] '>
         <div className='text-center'>
             <div data-aos="zoom in" className=''>
                 <div className='text-dark text-3xl md:text-6xl font-bold text-white'>
@@ -37,7 +37,7 @@ const Header = () => {
                     </div>
             </div>
         </div>
-        <div className='mx-5 md:mx-20 mt-48 overlap'>
+        <div className='mx-5 md:mx-20 mt-20 md:mt-48 overlap'>
               <div className='feature_bg py-10 rounded-3xl flex justify-center items-center flex-wrap gap-10'>
               <div className='text-slate-50'>
               <p className='text-slate-300 text-center text-xl md:text-2xl'>Join the Schools that are using our app. </p> 
