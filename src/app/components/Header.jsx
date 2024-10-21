@@ -10,6 +10,7 @@ import Appstore from '../../../public/applestore.png'
 import Webapp from '../../../public/web.png'
 import Try from '../../../public/try.png';
 import Point from '../../../public/point2.png';
+import Link from 'next/link';
 
 
 const Header = () => {
@@ -39,10 +40,10 @@ const Header = () => {
         <div className='mx-5 md:mx-20 mt-48 overlap'>
               <div className='feature_bg py-10 rounded-3xl flex justify-center items-center flex-wrap gap-10'>
               <div className='text-slate-50'>
-              <p className='text-slate-300 text-xl md:text-2xl'>Over 10 Schools on our Waitlist</p> 
+              <p className='text-slate-300 text-xl md:text-2xl'>Join the Schools that are using our app. </p> 
               </div>
               <div className='text-slate-50'>
-              <button className='bg-sky-400 text-black rounded-md  w-[200px] px-3 text-lg text-bold font-normal py-3'>Join Now </button>
+            <Link href={"https://app.pocketshuttle.com/login"}> <button className='bg-sky-400 text-black rounded-md  w-[200px] px-3 text-lg text-bold font-normal py-3'>Launch App </button></Link> 
               </div>
           </div>
         </div>
