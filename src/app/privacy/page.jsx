@@ -62,7 +62,7 @@ function page() {
             <li>We retain your information for as long as necessary to provide our services and comply with legal obligations.</li>
             <li>Once data is no longer needed, it will be securely deleted or anonymized.</li>
         </ul>
-        <p className='font-bold mb-2'>Children's Privacy</p>
+        <p className='font-bold mb-2'>Children&apos;s Privacy</p>
         <ul  className='mb-5 text-slate-800'>
             <li>Our services are intended for parents and guardians; however, we may collect limited information about children as provided by parents.</li>
             <li>We do not knowingly collect personal information directly from children under 13 without parental consent.</li>
