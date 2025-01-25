@@ -11,10 +11,6 @@
   color: #d8d2d2;
   font-family: 'Poppins';
   background: #201678;
-  /* background: #87ceeb; */
-  /* background: rgb(15,27,42);
-  background: linear-gradient(81deg, rgba(15,27,42,1) 0%, rgba(135,206,235,1) 0%, rgba(59,132,162,1) 70%); */
-
   z-index: 1;
 }
 
@@ -31,11 +27,8 @@
 .links {
     text-decoration: none;
     color: #ffff;
-  /* color: #0f1b2a; */
   font-size: 14px;
 }
-
-
 
 
 .nav-links {
@@ -51,7 +44,6 @@
 }
 
 .hamburger {
-  /* display: none; */
   flex-direction: column;
   cursor: pointer;
 }
@@ -59,7 +51,6 @@
 .line {
   height: 3px;
   width: 28px;
-  /* background-color: #D74390; */
   background-color: #fdfafa;
   font-weight: 400;
   margin: 3px 0;
@@ -79,7 +70,6 @@
 }
 
 .mobile-menu {
-  /* display: none; */
   position: absolute;
   width: 100%;
   margin-left: -50px;
@@ -88,7 +78,6 @@
   background-color: rgb(241, 236, 236);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 
 
 .mobile-menu ul {
@@ -100,7 +89,6 @@
 .mobile-menu li {
   padding: 1rem;
   cursor: pointer;
-  /* border-bottom: 1px solid #555; */
 }
 
 @media screen and (max-width: 767px) {
@@ -142,9 +130,9 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 50%; /* Adjust this value based on your design */
-    background-color: #201678; /* Set the background color */
-    transition: transform 0.3s ease-in-out; /* Add a transition effect */
+    width: 50%; 
+    background-color: #201678; 
+    transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
   }
   

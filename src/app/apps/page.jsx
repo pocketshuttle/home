@@ -8,7 +8,7 @@ const page = () => {
        <div className='pt-28 app_head_img text-center'>
         <h2 className='text-[50px] text-white font-bold'>Hello!</h2>
         <div className='flex justify-center my-4'>
-        <p className='w-[640px] text-slate-100 text-[20px] font-medium'>We know you like to know about the safety of your pupils and update the parents as well. PocketShuttle is designed for schools and parents.</p>
+        <p className='w-[640px] text-slate-100 text-[20px] font-medium'>We know you like to know about the safety of your studnts and update their parents as well. PocketShuttle is designed for Schools.</p>
         </div>
         <div>
             <p></p>
@@ -31,7 +31,6 @@ const page = () => {
         <div className='flex py-10 hover:shadow justify-center'>
        <Image src={'/phone.png'} width={250} height={250} alt="phone"/>
        </div>
-       <p className='text-teal-300 text-center pb-4 text-sm underline'>Coming Soon</p>
     </div>
   )
 }
