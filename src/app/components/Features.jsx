@@ -18,7 +18,7 @@ const Features = () => {
             <div className='md:flex text-center justify-around gap-5 m-5 flex-wrap'>
             <div className='w-[300px] p-4 bg-inherit border my-1 hover:shadow-xl transition-all border-slate-300 h-[280px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Clock In</p>
-                   <p className='text-left text-sm w-[250px] mt-3'>A clocking system that notify the parent/school for childs' pick up and drop off.</p>
+                   <p className='text-left text-sm w-[250px] mt-3'>A clocking system that notify the parent/school for childs&apos; pick up and drop off.</p>
                    <div className='flex justify-between mt-10 items-center'>
                    <div className='flex justify-around items-baseline'> <Image className='w-[100px]' src={Clockin}/> </div>
                      {/* <div className='text-sm'>EXPLORE MORE</div> */}

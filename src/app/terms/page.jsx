@@ -11,7 +11,7 @@ function page() {
         <p className='font-bold mb-5'>Welcome to PocketShuttle, a school bus management application designed to enhance the safety, convenience, and efficiency of school transportation. By using our application, you agree to comply with and be bound by the following Terms of Service. Please read them carefully.</p>
 
         <p className='font-bold mb-2'> Acceptance of Terms</p>
-        <p className='mb-5 text-slate-800'>By accessing or using PocketShuttle ("the App"), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use the App.</p>
+        <p className='mb-5 text-slate-800'>By accessing or using PocketShuttle (&quot;the App&quot;), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use the App.</p>
 
         <p className='font-bold mb-2'>Use of the Application</p>
         <ul  className='mb-5 text-slate-800'>

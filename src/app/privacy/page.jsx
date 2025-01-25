@@ -8,7 +8,7 @@ function page() {
         <h1 className='text-[30px] md:text-[50px] text-center font-bold'>Privacy Policy</h1>
         <p className='text-center text-[16px] mb-20'>Last updated:25-01-2025 </p>
 
-        <p className='font-bold mb-5'>PocketShuttle ("the App") is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and protect your information when you use our school bus management application.</p>
+        <p className='font-bold mb-5'>PocketShuttle (&quot;the App&quot;) is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and protect your information when you use our school bus management application.</p>
 
         <p className='font-bold mb-2'>Information We Collect</p>
         <p>a. Location Data:</p>
@@ -36,7 +36,7 @@ function page() {
             <li>To notify users of bus locations and estimated arrival times.</li>
             <li>To ensure the safety and efficiency of school transportation.</li>
             <li>To respond to user inquiries and support requests.</li>
-            <li>To monitor and analyze trends to enhance the App's performance.</li>
+            <li>To monitor and analyze trends to enhance the App&apos;s performance.</li>
         </ul>
         <p className='font-bold mb-2'>Sharing of Information</p>
         <ul  className='mb-5 text-slate-800'>
