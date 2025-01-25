@@ -120,9 +120,9 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-           <div className='text-slate-50'>
-            <Link href={"https://app.pocketshuttle.com/login"}> <button className='bg-sky-400 text-black rounded-md  w-[150px] px-3 text-md font-bold py-3'>Launch App </button></Link> 
-              </div>
+          <div className='text-slate-50 ml-2'>
+            <Link href={"https://app.pocketshuttle.com/login"}> <button className='bg-sky-400 text-black rounded-md  w-[150px] px-3 text-md font-medium py-3'>Launch App </button></Link> 
+        </div>
         </div>
       )}
     </nav>
