@@ -195,9 +195,13 @@ z-index: 2;
 
 @media screen and (max-width: 600px) {
 
+  .header_bg {
+    height: 500px;
+}
+
   .spinning_bg {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   width: 300px; /* adjust based on your image */
   height: 300px;
