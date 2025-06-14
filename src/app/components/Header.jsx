@@ -23,10 +23,10 @@ const Header = () => {
         <div className="spinning_bg"></div>
         <div className='text-center'>
             <div data-aos="zoom in" className=''>
-                <div className='text-dark text-3xl md:text-[120px] font-bold text-white'>
+                <div className='text-dark text-3xl lg:text-[120px] md:text-[80px] font-bold text-white'>
                  <div className='flex tracking-in-expand leading-normal justify-center items-center '>
                   <div>M</div>
-                  <div><Image className='w-[50px] md:w-[120px]' src={GeofenceImg}/></div>
+                  <div><Image className='w-[40px] lg:w-[120px] md:w-[80px]' src={GeofenceImg}/></div>
                   <div>bile School <span className='text-sky-400'>Run</span> </div>
                   </div>  
                   <span className='text-sky-400 tracking-in-expand'>you can </span> Trust</div>

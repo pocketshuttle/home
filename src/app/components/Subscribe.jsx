@@ -8,7 +8,7 @@ const Subscribe = () => {
     <div className='inner_download py-32'>
     <div className=' container mx-auto'>
       <h1 className='text-left text-slate-200 text-[40px] md:text-[50px] px-12 md:px-5 font-bold py-10'>Enjoy  A Swift<br/> Pick up & Drop off.</h1>
-        <div className='flex container mx-auto md:h-[600px] justify-around items-center flex-wrap'>
+        <div className='flex container mx-auto h-auto justify-around items-center flex-wrap'>
                <div className='col min-h-[560px] mx-3 my-3 hover:shadow-md hover:shadow-teal-600 border-teal-400 border shadow w-[500px] rounded-lg rounded-se-3xl p-8'>
                 <h1 className='text-2xl text-teal-400 font-normal'>Basic</h1>
                 <p className='text-slate-400 mt-3 text-sm'>Get Started with the Basic Plan.</p>

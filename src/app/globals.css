@@ -201,7 +201,7 @@ z-index: 2;
 
   .spinning_bg {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   width: 300px; /* adjust based on your image */
   height: 300px;
