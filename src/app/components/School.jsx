@@ -4,7 +4,7 @@ import schoolIcon from '../../../public/schoolbusicon.png';
 import ParentIcon from '../../../public/parenticon.png';
 import StudentIcon from '../../../public/studenticon.png';
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import Bus from '../../../public/bus.png';
+import Bus from '../../../public/mappin.png';
 
 const School = () => {
   return (
@@ -18,8 +18,8 @@ const School = () => {
                 </div>
         </div>
         <div className='flex justify-center items-center mt-20 gap-40 flex-wrap'>
-            <div className='col'>
-            <Image className='w-[500px]' src={Bus}/>
+            <div className='col '>
+            <Image className='w-[600px]' src={Bus}/>
             </div>
           
             <div className='col'>

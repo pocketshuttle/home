@@ -10,16 +10,48 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
 .header_bg {
-  background: url('../../public/world.png') no-repeat bottom;
+  position: relative;
+  background-color: #201678;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 2000px rgba(32, 22, 120, 0.6);
+}
+
+.spinning_bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px; /* adjust based on your image */
+  height: 600px;
+  transform: translate(-50%, -50%);
+  background: url('/globee.png') no-repeat center center;
+  background-size: contain;
+  animation: spin 20s linear infinite;
+  opacity: 0.2; /* reduce brightness if needed */
+  pointer-events: none; /* so it's non-interactive */
+  z-index: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+/* .header_bg {
+  background: url('../../public/blogtr.png') no-repeat bottom;
   position: relative;
   overflow: hidden;
   background-size: 40%;
   background-color: #201678;
   box-shadow: inset 0 0 0 2000px rgba(32, 22, 120, 0.6);
 
-}
+} */
 
 .app_page {
   background-color: #180D63;
@@ -163,15 +195,21 @@ z-index: 2;
 
 @media screen and (max-width: 600px) {
 
-  .header_bg {
-    background: url('../../public/world.png') no-repeat center;
-    position: relative;
-    overflow: hidden;
-    background-size: 100%;
-    background-color: #201678;
-    box-shadow: inset 0 0 0 2000px rgba(32, 22, 120, 0.6);
-  
-  }
+  .spinning_bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px; /* adjust based on your image */
+  height: 300px;
+  transform: translate(-50%, -50%);
+  background: url('/globee.png') no-repeat center center;
+  background-size: contain;
+  animation: spin 20s linear infinite;
+  opacity: 0.2; /* reduce brightness if needed */
+  pointer-events: none; /* so it's non-interactive */
+  z-index: 0;
+}
+
   
 }
 

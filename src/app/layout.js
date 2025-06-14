@@ -10,12 +10,15 @@ export const metadata = {
   description: "School Bus Management Application",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Navbar/>
-      <body className={inter.className}>{children}</body>
-      <Footer/>
+      <body className={inter.className}>
+        <Navbar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
