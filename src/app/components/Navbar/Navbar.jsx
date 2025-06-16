@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { IoHome } from "react-icons/io5";
 import { BsRocketTakeoff } from "react-icons/bs";
 import { GrDomain } from "react-icons/gr";
-import { FaPeopleGroup } from "react-icons/fa6";
+import { RiTeamFill } from "react-icons/ri";
 import PSLOGO from '../../../../public/ps.png';
 import { IoCloseSharp } from "react-icons/io5";
 import Image from 'next/image';
@@ -88,6 +88,11 @@ const Navbar = () => {
               Apps
             </Link>
           </li>
+           <li>
+            <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('/apps')}>
+              Our Team
+            </Link>
+          </li>
         </ul>
         <div className='text-slate-50'>
             <Link href={"https://app.pocketshuttle.com/login"}> <button className='bg-sky-400 text-black rounded-md  w-[150px] px-3 text-md font-medium py-3'>Launch App </button></Link> 
@@ -117,6 +122,12 @@ const Navbar = () => {
               <Link href={'/apps'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <GrDomain /> 
                Apps
+              </Link>
+            </li>
+             <li>
+              <Link href={'/apps'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <RiTeamFill />
+               Our Team
               </Link>
             </li>
           </ul>
