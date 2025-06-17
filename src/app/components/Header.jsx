@@ -19,7 +19,7 @@ const Header = () => {
 }, [])
   return (
     <>
-    <div className='pt-60 header_bg h-[720px] md:h-[820px] '>
+    <div className='pt-48 md:pt-60 header_bg h-[720px] md:h-[820px] '>
         <div className="spinning_bg"></div>
         <div className='text-center'>
             <div data-aos="zoom in" className=''>
