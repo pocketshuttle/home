@@ -78,12 +78,6 @@ const Navbar = () => {
           </li>
           <a href=""></a>
           <li>
-          <Link href={'#features'} className={`links ${activeItem === '' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('')}>
-              Features
-            </Link>
-
-          </li>
-          <li>
             <Link href={'/apps'} className={`links ${activeItem === '/apps' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('/apps')}>
               Apps
             </Link>
@@ -110,12 +104,6 @@ const Navbar = () => {
               <Link href={'/'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <IoHome /> 
               Home
-              </Link>
-            </li>
-            <li>
-              <Link href={'/'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
-              <BsRocketTakeoff /> 
-              Feature
               </Link>
             </li>
             <li>
