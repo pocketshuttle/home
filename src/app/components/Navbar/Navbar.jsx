@@ -5,7 +5,7 @@ import { IoHome } from "react-icons/io5";
 import { BsRocketTakeoff } from "react-icons/bs";
 import { GrDomain } from "react-icons/gr";
 import { RiTeamFill } from "react-icons/ri";
-import PSLOGO from '../../../../public/ps.png';
+import PSLOGO from '../../../../public/whitelogo.png';
 import { IoCloseSharp } from "react-icons/io5";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -53,10 +53,11 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="navbar bg-sk-300 py-4">
+    <nav className="navbar bg-sk-300 md:px-[50px] py-4">
       <div className="logo">
         <Link href={'/'} className="links w-[50px]">
-          <Image className='w-[140px]' src={PSLOGO} alt="" />
+                <Image className='w-[150px]' src={PSLOGO} alt="" />
+
         </Link>
       </div>
         {/* New fix */}
@@ -72,18 +73,18 @@ const Navbar = () => {
           <>
         <ul className="nav-links text-md container flex items-center gap-1 justify-center text-center">
           <li>
-          <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('/')}>
+          <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-1 border-sky-300 pb-3' : ''}`} onClick={() => handleItemClick('/')}>
               Home
             </Link>
           </li>
           <a href=""></a>
           <li>
-            <Link href={'/apps'} className={`links ${activeItem === '/apps' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('/apps')}>
+            <Link href={'/apps'} className={`links ${activeItem === '/apps' ? 'border-b-1 border-sky-300 pb-3' : ''}`} onClick={() => handleItemClick('/apps')}>
               Apps
             </Link>
           </li>
            <li>
-            <Link href={'/'} className={`links ${activeItem === '/' ? 'border-b-2 border-sky-300 pb-4' : ''}`} onClick={() => handleItemClick('/apps')}>
+            <Link href={'/team'} className={`links ${activeItem === '/' ? 'border-b-1 border-sky-300 pb-3' : ''}`} onClick={() => handleItemClick('/team')}>
               Our Team
             </Link>
           </li>
@@ -113,7 +114,7 @@ const Navbar = () => {
               </Link>
             </li>
              <li>
-              <Link href={'/'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <Link href={'/team'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <RiTeamFill />
                Our Team
               </Link>

@@ -32,14 +32,13 @@ const Features = () => {
                      {/* <div className='text-sm'>EXPLORE MORE</div> */}
                    </div>
                 </div>
-                <div className='w-[300px] p-4 bg-inherit border my-1 hover:shadow-xl border-slate-300 h-[280px] shadow-md rounded-lg rounded-se-3xl'>
+                {/* <div className='w-[300px] p-4 bg-inherit border my-1 hover:shadow-xl border-slate-300 h-[280px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Alert</p>
                    <p className='text-left text-sm w-[250px] mt-3'>A security system that trigger an alert to security organizations incase of emergency.</p>
                    <div className='flex justify-between mt-10 items-center'>
                    <div className='flex justify-around items-baseline'> <Image className='w-[100px]' src={Alert}/> </div>
-                     {/* <div className='text-sm'>EXPLORE MORE</div> */}
                    </div>
-                </div>
+                </div> */}
             </div>
             <div className='md:flex text-center justify-around gap-5 m-5 flex-wrap'>
             <div className='w-[300px] p-4 bg-inherit border my-1 hover:shadow-xl border-slate-300 h-[280px] shadow-md rounded-lg rounded-se-3xl'>
@@ -58,14 +57,13 @@ const Features = () => {
                      {/* <div className='text-sm'>EXPLORE MORE</div> */}
                    </div>
                 </div>
-                <div className='w-[300px] p-4 bg-inherit border my-1 hover:shadow-xl border-slate-300 h-[280px] shadow-md rounded-lg rounded-se-3xl'>
+                {/* <div className='w-[300px] p-4 bg-inherit border my-1 hover:shadow-xl border-slate-300 h-[280px] shadow-md rounded-lg rounded-se-3xl'>
                    <p className='text-slate-900 text-left text-xl font-bold'>Biometric</p>
                    <p className='text-left text-sm w-[250px] mt-3'>School, Parents and Students Biometric identification</p>
                    <div className='flex justify-between mt-10 items-center'>
                    <div className='flex justify-around items-baseline'> <Image className='w-[100px]' src={Biometric}/> </div>
-                     {/* <div className='text-sm'>EXPLORE MORE</div> */}
                    </div>
-                </div>
+                </div> */}
             </div>
            </div>
         </div>
