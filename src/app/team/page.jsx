@@ -41,25 +41,18 @@ const teams = [
 
 const jobs = [
   {
-    job_cat: "Design",
-    job_title: "Product Design",
-    zone: "hybrid",
-    job_type: "Part-time",
-    ap: "#"
+    job_cat: "Marketing",
+    job_title: "Field Marketers",
+    zone: "On-site",
+    job_type: "Part-time/Full time",
+    ap: "https://forms.gle/Bss1taZNjSYwRC836"
   },
    {
     job_cat: "Design",
-    job_title: "Product Design",
-    zone: "hybrid",
+    job_title: "Graphics Designer",
+    zone: "Remote",
     job_type: "Part-time",
-    ap: "#"
-  },
-   {
-    job_cat: "Design",
-    job_title: "Product Design",
-    zone: "hybrid",
-    job_type: "Part-time",
-    ap: "#"
+    ap: "https://forms.gle/Bss1taZNjSYwRC836"
   },
 ]
 
@@ -112,7 +105,7 @@ function page() {
           ))}
         </div>
         <div className='text-center py-[30px] bg-white h-[300px]'>
-          <h1 className='md:w-[1000px] w-[280px] mx-auto md:text-[24px] text-[16px] font-semibold'>At PocketShuttle, our mission is simple: to give parents peace of mind and schools the tools they need to keep children safe. Every child&apos;s journey should be as secure as their destination, and we&apos;re here to make that a reality</h1>
+          <h1 className='md:w-[1000px] w-[280px] mx-auto md:text-[24px] text-[14px] font-semibold'>At PocketShuttle, our mission is simple: to give parents peace of mind and schools the tools they need to keep children safe. Every child&apos;s journey should be as secure as their destination, and we&apos;re here to make that a reality</h1>
           <Image className='rounded-full block mx-auto mt-6' src={"/buchi.png"} width={60}  height={60} alt='img'/>
           <p className='text-center font-semibold text-[13px]'>Mmaduabuchi Omeje</p>
         </div>
