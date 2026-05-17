@@ -1,48 +1,118 @@
 import React from 'react';
-import Image from 'next/image';
-import { IoIosCheckmarkCircle } from "react-icons/io";
+import Link from 'next/link';
+import { IoIosCheckmarkCircle } from 'react-icons/io';
+
+const plans = [
+  {
+    name: 'Basic',
+    nameColor: 'text-teal-400',
+    borderColor: 'border-teal-400',
+    shadowColor: 'hover:shadow-teal-600',
+    price: 'Free',
+    priceNote: 'Get started at no cost',
+    cta: null,
+    features: [
+      'Family account setup',
+      'Start & share live trips',
+      'Real-time location tracking',
+      'Basic arrival notifications',
+      'Up to 3 linked viewers',
+    ],
+  },
+  {
+    name: 'Premium',
+    nameColor: 'text-sky-300',
+    borderColor: 'border-sky-300',
+    shadowColor: 'hover:shadow-sky-600',
+    price: 'Get in touch',
+    priceNote: 'Tailored for schools & transport companies',
+    cta: 'mailto:hello@pocketshuttle.com',
+    features: [
+      'Everything in Basic',
+      'Geofencing & zone alerts',
+      'Unlimited viewers per trip',
+      'Trip event logs & history',
+      'SMS & WhatsApp notifications',
+      'School / fleet dashboard',
+      'Driver management & assignment',
+      'Priority customer support',
+    ],
+  },
+];
 
 const Subscribe = () => {
   return (
-    <>
-    <div className='inner_download py-32'>
-    <div className=' container mx-auto'>
-      <h1 className='text-left text-slate-200 text-[40px] md:text-[50px] px-12  md:px-5 font-bold py-10'>Enjoy  A Swift<br/> Pick up & Drop off.</h1>
-        <div className='flex container mx-auto h-auto justify-around items-center flex-wrap'>
-               <div className='col min-h-[560px] mx-3 my-3 hover:shadow-md hover:shadow-teal-600 border-teal-400 border shadow w-[500px] rounded-lg rounded-se-3xl p-8'>
-                <h1 className='text-2xl text-teal-400 font-normal'>Basic</h1>
-                <p className='text-slate-400 mt-3 text-sm'>Get Started with the Basic Plan.</p>
-                <h1 className='text-5xl font-bold text-slate-300 my-3'> <span className='text-2xl'>N</span>0</h1>
-                {/* <button className='bg-teal-400 text-white text-md hover:bg-inherit hover:border hover:border-teal-400 hover:text-teal-400 rounded-md w-[200px] px-3 font-normal py-3'> Get Started </button> */}
-                <ul className='mt-5'>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-teal-400 text-2xl' /> Registration</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-teal-400 text-2xl' />School Profile Setup</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-teal-400 text-2xl' />Add up to 10 Parents</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-teal-400 text-2xl' />Clock in and out</li>
-             
-              </ul>
-               </div>
+    <div className='inner_download py-24 px-4'>
+      <div className='container mx-auto max-w-5xl'>
 
-               <div className='col min-h-[560px] mx-3 hover:shadow-md hover:shadow-sky-600 border-sky-300 border shadow w-[500px]  rounded-lg rounded-se-3xl p-8'>
-                <h1 className='text-2xl text-sky-300 font-normal'>Premium</h1>
-                <p className='text-slate-400 mt-3 text-sm'>Join the Premium Class with a payment plan to use the awesome Features.</p>
-                <h1 className='text-3xl font-bold text-slate-300 my-3'> <span className='text-2xl'>N</span> Get In touch </h1>
-                {/* <button className='bg-sky-400 text-white  hover:bg-inherit hover:border hover:border-sky-300 hover:text-sky-300 rounded-md w-[200px] px-3 text-md font-normal py-3'> Get Started </button> */}
-                <ul className='mt-5'>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> All Basic Features</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> Geofencing</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' />Unlimited Parents</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> Attendance Reports</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> Historical Data</li>
-                <li className='flex text-slate-300 justify-start items-center gap-2 mt-3'><IoIosCheckmarkCircle className='text-sky-400 text-2xl' /> Priority Customer Service</li>
-               
-              </ul>
-               </div>
+        {/* heading */}
+        <div className='text-center mb-16'>
+          <p className='text-sky-400 text-sm font-semibold uppercase tracking-widest mb-3'>
+            Pricing
+          </p>
+          <h2 className='text-3xl md:text-5xl font-bold text-slate-200 mb-4'>
+            Simple, transparent pricing.
+          </h2>
+          <p className='text-slate-400 text-lg max-w-lg mx-auto'>
+            Start free for families. Scale up for schools, fleets, and transport companies.
+          </p>
         </div>
-    </div>
-    </div>
-    </>
-  )
-}
 
-export default Subscribe
+        {/* plan cards */}
+        <div className='flex flex-col md:flex-row justify-center items-stretch gap-6'>
+          {plans.map(({ name, nameColor, borderColor, shadowColor, price, priceNote, cta, features }) => (
+            <div
+              key={name}
+              className={`flex-1 max-w-[480px] min-h-[520px] border ${borderColor} hover:shadow-md ${shadowColor} bg-white/5 rounded-2xl rounded-se-3xl p-8 transition-all`}
+            >
+              <h3 className={`text-2xl font-semibold ${nameColor} mb-1`}>{name}</h3>
+              <p className='text-slate-400 text-sm mb-4'>{priceNote}</p>
+              <p className='text-4xl font-bold text-slate-200 mb-6'>
+                {price === 'Free' ? (
+                  <><span className='text-xl font-normal'>₦</span>0</>
+                ) : (
+                  <span className='text-2xl'>{price}</span>
+                )}
+              </p>
+
+              {cta ? (
+                <Link href={cta}>
+                  <button className={`w-full border ${borderColor} ${nameColor} rounded-md py-3 font-medium hover:bg-white/10 transition-colors mb-6`}>
+                    Contact Us
+                  </button>
+                </Link>
+              ) : (
+                <Link href='https://app.pocketshuttle.com/login'>
+                  <button className='w-full bg-teal-400 text-black rounded-md py-3 font-semibold hover:bg-teal-300 transition-colors mb-6'>
+                    Get Started Free
+                  </button>
+                </Link>
+              )}
+
+              <ul className='space-y-3'>
+                {features.map((f) => (
+                  <li key={f} className='flex items-start gap-2 text-slate-300 text-sm'>
+                    <IoIosCheckmarkCircle className={`${nameColor} text-lg flex-shrink-0 mt-0.5`} />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* footnote */}
+        <p className='text-center text-slate-500 text-sm mt-10'>
+          Need something custom?{' '}
+          <Link href='mailto:hello@pocketshuttle.com' className='text-sky-400 hover:underline'>
+            Talk to us
+          </Link>
+          {' '}and we&apos;ll build a plan that fits.
+        </p>
+
+      </div>
+    </div>
+  );
+};
+
+export default Subscribe;
