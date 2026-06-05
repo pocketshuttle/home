@@ -14,7 +14,16 @@
   position: relative;
   background-color: #201678;
   overflow: hidden;
-  box-shadow: inset 0 0 0 2000px rgba(32, 22, 120, 0.6);
+  box-shadow:
+    inset 0 0 0 1px rgba(56, 189, 248, 0.08),
+    inset 0 -90px 120px rgba(24, 13, 99, 0.5);
+}
+
+.hero-title-accent {
+  position: relative;
+  display: inline-block;
+  color: #67e8f9;
+  text-shadow: 0 0 24px rgba(56, 189, 248, 0.38);
 }
 
 
@@ -41,15 +50,6 @@ z-index: 2;
 .feature {
   z-index: 1;
 }
-
-/* .header_bg {
-  height: 900px;
-  background: rgb(15,27,42);
-  background: linear-gradient(81deg, rgba(15,27,42,1) 0%, rgba(135,206,235,1) 0%, rgba(59,132,162,1) 70%);
-} */
-
-
-
 
 /* .school_bg {
   position: relative;

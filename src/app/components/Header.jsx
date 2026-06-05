@@ -27,11 +27,6 @@ const TrackingVisualization = () => (
           </feMerge>
         </filter>
 
-        {/* Soft radial fade at edges */}
-        <radialGradient id="edgeFade" cx="50%" cy="50%" r="55%">
-          <stop offset="60%" stopColor="transparent" stopOpacity="0" />
-          <stop offset="100%" stopColor="#201678" stopOpacity="1" />
-        </radialGradient>
       </defs>
 
       {/* Dot grid background */}
@@ -217,8 +212,8 @@ const TrackingVisualization = () => (
       <text x="270" y="726" fill="#a78bfa" fontSize="7" opacity="0.45" fontFamily="monospace" letterSpacing="1">TERMINAL</text>
       <text x="928" y="616" fill="#f472b6" fontSize="7" opacity="0.45" fontFamily="monospace" letterSpacing="1">STOP</text>
 
-      {/* Edge fade overlay so it blends with the hero background */}
-      <rect width="100%" height="100%" fill="url(#edgeFade)" />
+      {/* Subtle framing so the route map blends with the hero background */}
+      <rect width="100%" height="100%" fill="#201678" opacity="0.08" />
     </svg>
   </div>
 );
@@ -237,16 +232,10 @@ const Header = () => {
       <div className='text-center relative z-10 px-4'>
         <div data-aos="fade-up">
 
-          {/* eyebrow badge */}
-          <div className='inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-8'>
-            <span className='w-2 h-2 bg-sky-400 rounded-full animate-pulse block'></span>
-            <span className='text-slate-200 text-sm font-medium'>Real-time Movement Safety Platform</span>
-          </div>
-
           {/* headline */}
           <h1 className='text-4xl md:text-7xl lg:text-[88px] font-bold text-white leading-tight tracking-tight mb-6'>
             The Safety Layer<br />
-            <span className='bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
+            <span className='hero-title-accent'>
               for Every Journey
             </span>
           </h1>

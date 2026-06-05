@@ -11,12 +11,13 @@
   color: #d8d2d2;
   font-family: 'Poppins';
   background: #201678;
-  z-index: 1;
+  z-index: 1000;
 }
 
 
 .mobile-menu {
     text-align: left;
+    z-index: 1001;
 }
 
 
@@ -132,6 +133,7 @@
     height: 100%;
     width: 50%; 
     background-color: #201678; 
+    z-index: 1001;
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
   }
