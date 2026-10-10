@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
@@ -52,7 +53,13 @@ const jobs = [
   },
 ];
 
-export default function TeamPage() {
+// Team page is hidden: the route returns a 404. To restore, make TeamPage the default export again
+// and re-add the TEAM link in components/Navbar/Navbar.jsx.
+export default function HiddenTeamPage() {
+  notFound();
+}
+
+function TeamPage() {
   return (
     <div style={{ backgroundColor: '#0f0c2e' }} className='min-h-screen'>
 

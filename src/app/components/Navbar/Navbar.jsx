@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { IoHome } from "react-icons/io5";
-import { RiTeamFill } from "react-icons/ri";
 import { MdOutlineExplore } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io5";
 import { HiOutlineViewGrid } from "react-icons/hi";
@@ -37,7 +36,6 @@ const Navbar = () => {
     { href: '/', label: 'HOME', Icon: IoHome },
     { href: '/solutions', label: 'SOLUTIONS', Icon: MdOutlineExplore },
     { href: '/apps', label: 'APPS', Icon: HiOutlineViewGrid },
-    { href: '/team', label: 'TEAM', Icon: RiTeamFill },
   ];
 
   return (
